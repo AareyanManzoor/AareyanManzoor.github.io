@@ -1,0 +1,8 @@
+- name: About
+  link: /about.html
+- name: Blog
+  link: /blog.html
+- name: Scans
+  link: scans.html
+- name: Latex-Group
+  link: latex_group.html

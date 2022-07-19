@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.current {
+  color: gray !important; /* did not have high precedance, fixed with !important */
+}
+
+nav {
+  text-align: center; /* center navbar items */
+}
+
+a:visited {
+ color: orange;
+}
+
+body {
+  font-family:  "Inter", -apple-system, "avenir next", avenir, roboto, noto, ubuntu, "helvetica neue", helvetica, sans-serif;
+  font-size: 1.0rem;
+  line-height: 2;
+  margin: 0;
+  min-height: 100%;
+  padding: 0 8px 0 8px; /* Padding for small screens (ie. phones) */
+  max-width: 1000px; /* Don't make text insanely long on large screens */
+}
+p {
+  margin: 35px;
+}
+
+figure {
+    display: inline-table;
+    border: 1px dotted gray;
+}
+figure img {
+    vertical-align: top;
+    align: center; 
+}
+figure figcaption {
+    border: 1px dotted blue;
+    text-align: center;
+}
+
+.panel-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+}
+
+.panel-image > img {
+    margin: auto;
+}
