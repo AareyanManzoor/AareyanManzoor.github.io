@@ -1,10 +1,14 @@
+---
+###
+---
 <!doctype html>
 <html>
-  <head> {% raw %}{% seo %}{% endraw %}
+  <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
     <meta name="google-site-verification" content="YIwti461_EhHim2ANY_4enF46Hv6GPrQKp5elHLmY5k" />
+    {% seo %}
   </head>
   <body>
 	{% if site.google_analytics and jekyll.environment == 'production' %}

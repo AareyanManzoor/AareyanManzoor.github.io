@@ -22,7 +22,7 @@ title: Aareyan Manzoor's website
 email: johndoesmith1729@gmail.com
 description: This is Aareyan Manzoor's website. Includes a blog, some scans of old thesis/books and a Latex group.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "htto://aareyanmanzoor.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://aareyanmanzoor.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  AareyanManzoor
 
 #google analytics
