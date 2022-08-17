@@ -10,7 +10,7 @@ nav {
 }
 
 a:visited {
- color: orange;
+ color: purple;
 }
 
 body {
@@ -49,4 +49,76 @@ figure figcaption {
 
 .panel-image > img {
     margin: auto;
+}
+
+.scroll-anchor {
+    padding-top: 66px;
+    margin-top: -66px;
+}
+
+.header-image {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    max-height: 100%;
+    z-index: 0;
+}
+
+.header-overlay {
+    position: relative;
+    z-index: 1;
+}
+
+.container-fluid {
+    padding-left: 0px;
+}
+
+.invited-speaker.collapsed {
+    background-color: #d1e7dd;
+}
+
+.invited-speaker:not(.collapsed) {
+    background-color: #a3cfbb;
+    color: #000000;
+}
+
+.invited-speaker:hover {
+    background-color: #75b798;
+}
+
+.speaker.collapsed {
+    background-color: #f8f9fa;
+}
+
+.speaker:not(.collapsed) {
+    background-color: #e9ecef;
+    color: #000000;
+}
+
+.speaker:hover {
+    background-color: #dee2e6;
+}
+
+
+.activity.collapsed {
+    background-color: #fff3cd;
+}
+
+.activity:not(.collapsed) {
+    background-color: #ffe69c;
+    color: #000000;
+}
+
+.activity:hover {
+    background-color: #ffda6a;
+}
+
+
+.break.collapsed {
+    background-color: #cfe2ff;
+}
+
+.break.accordion-button::after {
+    opacity: 0;
 }
