@@ -1,8 +1,9 @@
-- name: Home
-  link: /
-- name: Blog
-  link: blog.html
-- name: Scans
-  link: scans.html
-- name: TeXromancers
-  link: Texromancers.html
+main:
+        - title: Home
+          url: /
+        - title: Blog
+          url: blog.html
+        - title: Scans
+          url: scans.html
+        - title: TeXromancers
+          url: Texromancers.html

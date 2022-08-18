@@ -24,17 +24,52 @@ description: This is Aareyan Manzoor's website. Includes a blog, some scans of o
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://aareyanmanzoor.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  AareyanManzoor
+repository: "AareyanManzoor/AareyanManzoor.github.io"
 
+comments:
+        provider: "giscus"
+        giscus:
+                repo_id: "AareyanManzoor/AareyanManzoor.github.io"
+                category_name: "General"
+                discussion_term: "pathname"
+                reactions_enabled: "1"
+                theme: "preferred_color_scheme"
+                loading: "lazy"
+
+search: true
 #google analytics
 google_analytics: G-PY35G17849
 
+defaults:
+       - scope:
+                path: ""
+         values:
+                author_profile: true
+
+
+author:
+        name: "Aareyan Manzoor"
+        avatar: "/assets/images/porygon2.jpg"
+        bio: "I am a 3rd year math UG at ASU. My interest lies in the interplay of different field but I am leaning towards operator theory for my PhD. I am a former bangladeshi but current arizonian, and I am a member of the LGBTQ+ community"
+        location: "Arizona (unfortunate), US"
+        links:
+                - label: "youtube"
+                  icon: "fab fa-fw fa-youtube"
+                  url: "https://www.youtube.com/channel/UCUq84h8CO4wBDaWZEABoVZQ"
+                - label: "github"
+                  icon: "fab fa-fw fa-github"
+                  url: "https://github.com/AareyanManzoor"
+                
+
 # Build settings
-theme: minima
+remote_theme: mmistakes/minimal-mistakes@4.24.0
+minimal_mistakes_skin: dark
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-include-cache
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
