@@ -45,7 +45,10 @@ defaults:
                 path: ""
          values:
                 author_profile: true
-
+       - scope:
+               path: "_posts/"
+         values:
+                 comments: true
 
 author:
         name: "Aareyan Manzoor"
@@ -59,8 +62,12 @@ author:
                 - label: "github"
                   icon: "fab fa-fw fa-github"
                   url: "https://github.com/AareyanManzoor"
-                
-
+                - label: "reddit"
+                  icon: "fab fa-fw fa-reddit"
+                  url: "https://www.reddit.com/user/john_doe_smith"
+                - label: "website repository"
+                  icon : "fab fa-fw fa-github"
+                  url: "https://github.com/AareyanManzoor/AareyanManzoor.github.io"
 # Build settings
 remote_theme: mmistakes/minimal-mistakes@4.24.0
 minimal_mistakes_skin: dark
