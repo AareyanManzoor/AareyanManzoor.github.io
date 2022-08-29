@@ -1,6 +1,5 @@
 ---
-layout: post
-author: Aareyan Manzoor
+layout: posts
 
 ---
 <title>Proof of Cayley-Hamilton using the Zariski Topology</title>

@@ -3,6 +3,7 @@ layout: single
 title: About
 description: Aareyan Manzoors websites, about me page describing myself and the goal of the site.
 classes: wide
+author_profile: true
 ---
 Hello, I am Aareyan Manzoor, a 3rd year UG at ASU. I am a math student and plan to go into math research. My interests in math are very varied, I love the interplay between seemingly different fields a lot. 
 

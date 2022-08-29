@@ -36,6 +36,7 @@ comments:
                 theme: "preferred_color_scheme"
                 loading: "lazy"
 
+future: true
 search: true
 #google analytics
 google_analytics: G-PY35G17849
@@ -49,6 +50,7 @@ defaults:
                path: "_posts/"
          values:
                  comments: true
+                 author_profile: true
 
 author:
         name: "Aareyan Manzoor"
@@ -68,6 +70,10 @@ author:
                 - label: "website repository"
                   icon : "fab fa-fw fa-github"
                   url: "https://github.com/AareyanManzoor/AareyanManzoor.github.io"
+
+kramdown: 
+        math_engine: katex
+        hard_wrap: true
 # Build settings
 remote_theme: mmistakes/minimal-mistakes@4.24.0
 minimal_mistakes_skin: dark

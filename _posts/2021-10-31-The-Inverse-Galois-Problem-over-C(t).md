@@ -1,6 +1,5 @@
 ---
-layout: post
-author: Aareyan Manzoor
+layout: posts
 ---
 
 <p>Galois theory in its vanilla form gives us a connection between field theory and group theory. Specifically, for nice field extensions (so called Galois extensions), you can associate to it the group of its automorphisms (the Galois group). Galois theory claims that sub-extensions correspond to subgroups of the Galois group. Now a natural question is, can we say that each finite group \( G\) is the galois group over some extension of a given field? For \( \mathbb{Q}\) , the problem is still open. However for the field \(  \mathbb{C}(t)\) , the answer is positive! The proof requires some Riemann surface theory and some covering space theory. The former is to be expected, as we are talking about \(  \mathbb{C}(t)\) which has inherent connections to complex analysis. The latter comes in because there is an analogue of Galois theory for covering spaces. One nice thing about this problem is that it directly translates the covering Galois theory to the vanilla field one for the context. This post will assume the prerequisites of Galois theory and some basic pointset topology. Some algebraic topology will be used, but the reader can safely blackbox those. I will explain briefly the concepts used and the reader wont need to know those beyond the details I provided for this blog. </p>

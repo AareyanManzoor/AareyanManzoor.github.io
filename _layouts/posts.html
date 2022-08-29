@@ -1,6 +1,17 @@
 ---
 layout: archive
+author_profile: true
+classes: wide
 ---
+<head>
+
+    {% include katex.html %}
+    {% include tikzjax.html %}
+
+</head>
+
+<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+
 
 {{ content }}
 
