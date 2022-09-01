@@ -1,11 +1,12 @@
 ﻿---
 layout: posts
+toc: true
+comments: true
 ---
-<title> Stone-Čech Compactification and Multiplier Algebras. </title>
 <p>There is an isomorphism theorem of Gelfand, detailed in the next paragraph. It ends up giving an (anti)-equivalence of categories between \(C^\ast\)-algebras and the category of locally compact haussdorf spaces. It gives rise to the philosophy that \(C^\ast\) algebras are really the study of "non-commutative topology". One of the ideas here is that phenomena in topology should have their counterparts in \(C^\ast\)-algebras. One of the most important examples of this is the extension of \(K\)-theory to \(C^\ast\)-algebras. Today, we do something simpler but still very much striking. We talk about compactifications and their analogues, and how we can use this interplay between topology and \(C^\ast\)-algebras to learn more about compactifications. </p>
 
 
-<h2>The Gelfand Isomorphism</h2>
+## The Gelfand Isomorphism
 
 <p>
 Recall a Banach space is a normed \(\bb{C}\)-vector space complete under the induced metric. A Banach algebra in turn is a Banach space with a multiplication, such that \(\norm{ab}\leq \norm{a}\norm{b}\). The simplest such objects to study are the abelian Banach algebras. For each unital abelian Banach algebra \(A\), take \(\Spec(A)\) to be the space of characters, i.e homomorphisms \(A\lra{\gamma}\bb{C}\). We can give \(\Spec(A)\) the <a href="https://mathworld.wolfram.com/Weak-StarTopology.html"> weak*-topology</a> and its easy to check due after applying the  Banach-Alaoglu theorem that this is infact a compact space. Now we get a representation 
@@ -20,7 +21,7 @@ A \(C^\ast\) algebra is an algebra with an involution \(\ast\) such that \(\norm
 <p>
 I should mention that this really is an (anti-)equivalence of categories between commutative \(C^\ast\) algebras and the category of LCH spaces with continuous maps. Send a space to its \(C_0\) and a commutative algebra to its spectrum.
 </p>
-<h2>Unitizations and Compactifications </h2>
+## Unitizations and Compactifications 
 <p>We shall say compact \(Y\) is a compactification of LCH \(X\) (non-compact) if
 <li>There is an embedding \(\iota: X \hookrightarrow Y\) </li>
 <li> The image \(\iota(X)\) is dense in \(Y\) </li> </p>
@@ -51,7 +52,7 @@ A unitization of a \(C^\ast\)-algebra \(A\) is:
 I have already shown compactifications lead to unitizations.I leave it as an exercise to show the converse. 
 </p>
 
-<h2>Multiplier Algebras.</h2>
+## Multiplier Algebras.
 <p>
 The Stone-Čech compactification of a LCH space \(X\), \(\beta X\), is the biggest compactification of \(X\). As we saw above, we expect this to correspond to the biggest unitization of a non-unital \(C^\ast\)-algebra \(A\). The advantage of thinking in these terms is that for \(C^\ast\) algebras this is quite explicit. Indeed, the biggest unitization of \(A\), called \(M(A)\)(its multiplier algebra) is given as follows:
 </p>
@@ -74,7 +75,7 @@ Suppose \(B\) contains \(A\) as an ideal. Then notice we have a map \(\psi:B\lra
 <p>
 To summarize, whenever \(B\) contains \(A\) as an essential ideal, \(B\) has a unique embedding into \(M(A)\). So \(M(A)\) is the biggest unitization as promised. We will get to the commutative case in the next section, but a good example for now is that if \(A=K(H)\), compact operators on some hilbert space, then \(M(A) = B(H)\), bounded operators on that hilbert space.</p>
 
-<h2>Stone-Čech Compactification </h2>
+## Stone-Čech Compactification 
 
 <p>
 The Stone-Čech Compactification, \(\beta X\),is the biggest compactification of a space, i.e if \(Y\) is a compactification than \(\beta X\) uniquely maps into \(Y\) making the obvious diagram commute. This is literally the dual condition of the multiplier algebra, so we just need to figure out what \(M(C_0(X))\) is. Luckily for us, the answer is easy: \(C_b(X)\), bounded continuous functions on \(X\) with sup norm. One can easily check that \(C_0(X)\) is essential in \(C_b(X)\), so that there is a injective map \(\psi: C_b(X) \lra{} M(C_0(X))\). All we need to do is show surjection, which is easily done but the proof I know is a bit annoying and uses some other tools (like approximate units). I will hence refer the user to Gerard Murphy's book on the topic, page 83.
