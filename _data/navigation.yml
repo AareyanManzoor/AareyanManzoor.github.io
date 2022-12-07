@@ -3,7 +3,7 @@ main:
           url: /
         - title: Blog
           url: blog.html
-        - title: Scans
-          url: scans.html
+        - title: Sources
+          url: sources.html
         - title: TeXromancers
           url: Texromancers.html
