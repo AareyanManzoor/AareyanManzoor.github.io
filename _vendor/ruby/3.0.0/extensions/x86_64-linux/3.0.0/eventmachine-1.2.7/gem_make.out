@@ -1,5 +1,5 @@
 current directory: /home/aareyan/AareyanManzoor.github.io/_vendor/ruby/3.0.0/gems/eventmachine-1.2.7/ext
-/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20221207-513-uvooxi.rb extconf.rb
+/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20221208-10663-kem3al.rb extconf.rb
 checking for -lcrypto... no
 checking for openssl/ssl.h... no
 checking for rb_trap_immediate in ruby.h,rubysig.h... no
