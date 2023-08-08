@@ -2,14 +2,14 @@
 layout  : posts
 toc     : false
 comments: true
-
+classes : wide
 ---
 
 <p> Recently I was a counselor at <a href="https://rossprogram.org/">the Ross math program</a> where quadratic reciprocity was one of the main things we built up to. (as a side note, I seriously recommend this job, some of the most fun I have had.) Quadratic reciprocity has always been mysterious to me. It is a simple enough statement: knowing when \(p\) is a QR mod \(q\) can be determined if we know when \(q\) is a QR mod \(p\). However this has led itself to 246 published proofs somehow, which always suggested to me something deep should be embedded into the statement. However before last month I could not really convince myself of this being a deep statement. A lot of proofs of it is often just e.g. counting or doing a computation and it just comes out.</p>
 
 <p> We will look at in this blog, one of Gauss' \(8\) proof of this. The proof by so called Gauss sums. This is a common proof presented in many elementary number theory class. but usually without any intuition: its just computation. We will assume some Field theory and Galois theory, basically just know the Galois correspondence. Also for our intents and purposes, \(2\) doesn't exist!</p>
 
-##When is -3 a quadratic residue?
+<h2>When is -3 a quadratic residue?</h2>
 
 <p>We start of with a simple question, when is \(-3\) a quadratic residue? So we are asking, let \(p\) be prime, does there exist \(x\) such that 
 \[x^2 = -3 \pmod{p}?\]
@@ -29,22 +29,22 @@ What about when \(p\equiv 2 \pmod{3}\)? We do not have an element of order \(3\)
 </p>
 
 <p>
-The trick we did for \(p\equiv 2\pmod{3}\) will not generalize unfortunately. The reason is that we do not easily know what the minimum polynomial of \(z\), an element of order \(q\), is in \(\mathbb{F}_p\). So we do not know which \(z\mapso z^a\) are the correct automorphisms to consider!
+The trick we did for \(p\equiv 2\pmod{3}\) will not generalize unfortunately. The reason is that we do not easily know what the minimum polynomial of \(z\), an element of order \(q\), is in \(\mathbb{F}_p\). So we do not know which \(z\mapsto z^a\) are the correct automorphisms to consider!
 However, once we look at the general case, actually an even nicer trick will help us.
 </p>
 
-##Gauss sums
+<h2>Gauss sums</h2>
 
 <p>
 We managed to completely classify when \(-3\) is a quadratic residue mod \(p\) by writing its square root interms of roots of unity. We will try to ask a more general question, when is \(\sqrt{n}\in \mathbb{Q}(\zeta_p)\) where \(\zeta_p\) is a primitive \(p\)th root of unity. Is there even such an element in the field? Actually the answer is yes. To see this all we need is some Galois theory. Note 
 \[\Gal(\mathbb{Q}(\zeta_p)/\mathbb{Q}) = \{\sigma_j| j \text{  coprime to  } p\} \cong \left(\mathbb{Z}/p\mathbb{Z}\right)^\ast \cong \mathbb{Z}/(p-1)\mathbb{Z}, \quad \sigma^j(\zeta_p) = \zeta_p^j. \]
-And since \(2\) isnt a prime, this is an even cyclic group and hence has a subgroup of index \(2\). The fixed field of this is hence of degree 2, i.e a quadratic extension \(\mathbb{Q}(\sqrt{n}\) so in particular, some square root is in the cyclotomic field. Note the subgroup of index \(2\) will be all things of the form \(\{\sigma_{j^2}\}). 
+And since \(2\) isnt a prime, this is an even cyclic group and hence has a subgroup of index \(2\). The fixed field of this is hence of degree 2, i.e a quadratic extension \(\mathbb{Q}(\sqrt{n})\) so in particular, some square root is in the cyclotomic field. Note the subgroup of index \(2\) will be all things of the form \(\\sigma_{j^2}\}\). 
 </p>
 
 <p>
 But lets not get too lost in the Galois theory, and lets say simply that we have
 \[\tau = \sum_{i=0}^{p-1} a_i \zeta_p^i = \sqrt{n}\]
-for some \(n\). Then since an automorphism sends \(\sqrt{n}\) to one of its conjugates, i.e itself or its negation, we would have \(\sigma_j{\tau) =\pm \tau\). But in either case, I could just apply \(\sigma_j\) again to have \(\sigma_{j^2} (\tau) = \tau\). If we expand this out, it says
+for some \(n\). Then since an automorphism sends \(\sqrt{n}\) to one of its conjugates, i.e itself or its negation, we would have \(\sigma_j(\tau) =\pm \tau\). But in either case, we could just apply \(\sigma_j\) again to have \(\sigma_{j^2} (\tau) = \tau\). If we expand this out, it says
 \[\sigma_{j^2}(\tau) = \sum_{i=0}^{p-1} a_i \zeta_p^{j^2i} = \tau = \sum_{i=0}^{p-1} a_i \zeta_p^i.\]
 Comparing the coefficient of \(\zeta_p^{j^2}\), we have \(a_1 = a_{j^2}\). So this tells us that all quadratic residues have the same coefficient. Since \(\tau\) isnt fixed by everything, for non-residues we should have \(\sigma_{j}(\tau) = -\tau\), i.e \(a_j=-a_1\) and \(a_0=0\). We can just divide by \(a_1\) and hence we can assume \(a_1=1\). So the coefficient of \(\zeta^j\) is +1 or -1 depending on wether it is a quadratic residue or not. I.e
 \[\tau = \sum_{i=1}^{p-1}\left(\dfrac{i}{p}\right) \zeta_p^i.\]
@@ -56,7 +56,7 @@ Now we compute
 	&= \sum_{k\in \mathbb{F}_p} \left(\dfrac{k}{p}\right) \sum_{i \in \mathbb{F}_p} \zeta_p^{i(k+1))}\\
 	&= (p-1)\left(\dfrac{-1}{p}\right) + \sum_{k\in \mathbb{F}_p-\{-1\}}  \left(\dfrac{k}{p}\right) \sum_{s \in \mathbb{F}_p} \zeta_p^{s}\\
 	&= (p-1)\left(\dfrac{-1}{p}\right) + \sum_{k\in \mathbb{F}_p-\{-1\}}  \left(\dfrac{k}{p}\right)(-1)\\
-	&= p\left(\dfrac{-1}{p}\right) -\sum_{k\in \mathbb{F}_p} }\left(\dfrac{k}{p}\right)\\
+	&= p\left(\dfrac{-1}{p}\right) -\sum_{k\in \mathbb{F}_p} \left(\dfrac{k}{p}\right)\\
 	&= p\left(\dfrac{-1}{p}\right). 
 \end{aligned}
 \]
