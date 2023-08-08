@@ -53,7 +53,7 @@ Now we compute
 \tau^2 &= \sum_{(i,i')\in \mathbb{F}_p^2} \left(\dfrac{ii'}{p}\right) \zeta_p^{i+i'} \\
 	&= \sum_{(i,k)\in \mathbb{F}_p^2} \left(\dfrac{i(ki)}{p}\right) \zeta_p^{i+ki}\\
 	&= \sum_{(i,k)\in \mathbb{F}_p^2} \left(\dfrac{k}{p}\right) \zeta_p^{i(k+1))}\\
-	&= \sum_{k\in \mathbb{F}_p} \left(\dfrac{k}{p}\right) \sum_{i \in \mathbb{F}_p} \zeta_p^{i(k+1))}\\
+	&= \sum_{k\in \mathbb{F}_p} \left(\dfrac{k}{p}\right) \sum_{i \in \mathbb{F}_p} \zeta_p^{i(k+1)}\\
 	&= (p-1)\left(\dfrac{-1}{p}\right) + \sum_{k\in \mathbb{F}_p-\{-1\}}  \left(\dfrac{k}{p}\right) \sum_{s \in \mathbb{F}_p} \zeta_p^{s}\\
 	&= (p-1)\left(\dfrac{-1}{p}\right) + \sum_{k\in \mathbb{F}_p-\{-1\}}  \left(\dfrac{k}{p}\right)(-1)\\
 	&= p\left(\dfrac{-1}{p}\right) -\sum_{k\in \mathbb{F}_p} \left(\dfrac{k}{p}\right)\\
@@ -71,14 +71,14 @@ Now consider \(\mathbb{F}_q\), and the question is wether \(p\) is a quadratic r
 The computation would be the same but also one might argue using polynomials, the min poly of \(\zeta_p\) in \(\mathbb{C}\) is \(\Phi_p\) and it must divide \(\tau^2-p\), and the min poly of \(z\) mod \(q\) divides \(\Phi_p\). Note that if we define \(\sigma_q\) the same way as before, sending \(z\mapsto z^q\), its not necessarily an automorphism but it does still satisfy \(\sigma_q(z) = \left(\dfrac{q}{p}\right) \tau.\). Since \((a+b)^q = a^q+b^q\) in this field, we have
 \[\tau^q = \sigma_q(\tau) =  \left(\dfrac{q}{p}\right) \tau.\]
 As we know \(\tau \in \mathbb{F}_q\) if and only if \(\tau^q = \tau\). So actually we already know the answer, \(p\left(\dfrac{-1}{p}\right)\) is a quadratic residue mod \(q\) iff \(q\) is a quadratic residue mod \(p\). We have already accomplished our goal, we know how to relate \(p\) being a quadratic residue mod \(q\) to the other way around. But lets write an equation down with this and say
-\[\tau^q = \tau (\tau^2)^{(q-1)/2} = \tau \left(\dfrac{-1}{p}\right)^{(q-1)}{2}\right) p^{(q-1)/2} = \left(\dfrac{-1}{p}\right)\left(\dfrac{-1}{q}\right)\left(\dfrac{p}{q}\right)\tau.\]
+\[\tau^q = \tau (\tau^2)^{(q-1)/2} = \tau \left(\dfrac{-1}{p}\right)^{(q-1)/2} p^{(q-1)/2} = \left(\dfrac{-1}{p}\right)\left(\dfrac{-1}{q}\right)\left(\dfrac{p}{q}\right)\tau.\]
 Equating we'd have
 \[\left(\dfrac{-1}{p}\right)\left(\dfrac{-1}{q}\right)\left(\dfrac{p}{q}\right) = \left(\dfrac{q}{p}\right),\]
 which we can write nicely as
 \[\left(\dfrac{-1}{p}\right)\left(\dfrac{-1}{q}\right)=\left(\dfrac{p}{q}\right) \left(\dfrac{q}{p}\right).\]
 </p>
 
-##conclusion
+<h2>conclusion</h2>
 <p>
 Hopefully this injected some intuition into the idea of the Gauss sums. Basically, Gauss sums are a way to capture quadratic Kronecker-Weber, that we can write every \(\sqrt{n}\) interms of roots of unities. And this was enough to solve quadratic reciprocity. This idea can be generalized to higher reciprocity laws also. Infact the full statement of Kronecker-Weber says that every abelian extension(i.e Galois group over \(\mathbb{Q}\) is abelian) is a subfield of a cyclotomic extension. And basically this allows one to write down all such higher reciprocity laws. This is the content of Class field theory.
 </p>
