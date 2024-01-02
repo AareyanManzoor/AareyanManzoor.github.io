@@ -55,8 +55,8 @@ defaults:
 author:
         name: "Aareyan Manzoor"
         avatar: "/assets/images/porygon2.jpg"
-        bio: "I am a 3rd year math UG at ASU. My interest lies in the interplay of different field but I am leaning towards operator theory for my PhD. I am a former bangladeshi but current arizonian, and I am a member of the LGBTQ+ community"
-        location: "Arizona (unfortunate), US"
+        bio: "I am a grad student at Waterloo. My current interests are in the intersection of operator algebras and quantum information. I am a former bangladeshi but current ontorian, and I am a member of the LGBTQ+ community"
+        location: "Ontario, canada"
         links:
                 - label: "youtube"
                   icon: "fab fa-fw fa-youtube"
@@ -64,9 +64,6 @@ author:
                 - label: "github"
                   icon: "fab fa-fw fa-github"
                   url: "https://github.com/AareyanManzoor"
-                - label: "reddit"
-                  icon: "fab fa-fw fa-reddit"
-                  url: "https://www.reddit.com/user/john_doe_smith"
                 - label: "website repository"
                   icon : "fab fa-fw fa-github"
                   url: "https://github.com/AareyanManzoor/AareyanManzoor.github.io"

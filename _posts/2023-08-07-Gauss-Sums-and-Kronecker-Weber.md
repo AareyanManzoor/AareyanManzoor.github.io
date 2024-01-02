@@ -7,7 +7,7 @@ classes : wide
 
 <p> Recently I was a counselor at <a href="https://rossprogram.org/">the Ross math program</a> where quadratic reciprocity was one of the main things we built up to. (as a side note, I seriously recommend this job, some of the most fun I have had.) Quadratic reciprocity has always been mysterious to me. It is a simple enough statement: knowing when \(p\) is a QR mod \(q\) can be determined if we know when \(q\) is a QR mod \(p\). However this has led itself to 246 published proofs somehow, which always suggested to me something deep should be embedded into the statement. However before last month I could not really convince myself of this being a deep statement. A lot of proofs of it is often just e.g. counting or doing a computation and it just comes out.</p>
 
-<p> We will look at in this blog, one of Gauss' \(8\) proof of this. The proof by so called Gauss sums. This is a common proof presented in many elementary number theory class. but usually without any intuition: its just computation. We will assume some Field theory and Galois theory, basically just know the Galois correspondence. Also for our intents and purposes, \(2\) doesn't exist!</p>
+<p> We will look at in this blog, one of Gauss' \(8\) proofs of this. The proof by so called Gauss sums. This is a common proof presented in many elementary number theory class. but usually without any intuition: its just computation. We will assume some Field theory and Galois theory, basically just know the Galois correspondence. Also for our intents and purposes, \(2\) doesn't exist!</p>
 
 <h2>When is -3 a quadratic residue?</h2>
 
@@ -38,7 +38,7 @@ However, once we look at the general case, actually an even nicer trick will hel
 <p>
 We managed to completely classify when \(-3\) is a quadratic residue mod \(p\) by writing its square root interms of roots of unity. We will try to ask a more general question, when is \(\sqrt{n}\in \mathbb{Q}(\zeta_p)\) where \(\zeta_p\) is a primitive \(p\)th root of unity. Is there even such an element in the field? Actually the answer is yes. To see this all we need is some Galois theory. Note 
 \[\Gal(\mathbb{Q}(\zeta_p)/\mathbb{Q}) = \{\sigma_j| j \text{  coprime to  } p\} \cong \left(\mathbb{Z}/p\mathbb{Z}\right)^\ast \cong \mathbb{Z}/(p-1)\mathbb{Z}, \quad \sigma^j(\zeta_p) = \zeta_p^j. \]
-And since \(2\) isnt a prime, this is an even cyclic group and hence has a subgroup of index \(2\). The fixed field of this is hence of degree 2, i.e a quadratic extension \(\mathbb{Q}(\sqrt{n})\) so in particular, some square root is in the cyclotomic field. Note the subgroup of index \(2\) will be all things of the form \(\\sigma_{j^2}\}\). 
+And since \(2\) isnt a prime, this is an even cyclic group and hence has a subgroup of index \(2\). The fixed field of this is hence of degree 2, i.e a quadratic extension \(\mathbb{Q}(\sqrt{n})\) so in particular, some square root is in the cyclotomic field. Note the subgroup of index \(2\) will be all things of the form \(\{\sigma_{j^2}\}\). 
 </p>
 
 <p>
@@ -60,7 +60,7 @@ Now we compute
 	&= p\left(\dfrac{-1}{p}\right). 
 \end{aligned}
 \]
-We used several time that whenever \(i\neq 0\), we have \(k\mapsto ki\) is a bijetion of \(\mathbb{F}_p^\times\). We already knew \(\tau^2\) was going to be a rational, so its great to see it is actually just \(\pm 3\). Ofcourse when \(p=3\), this is the case we already worked out. Also recall that \(\tau\) is fixed by \(\sigma_q\) only when \(q\) is a quadratic residue mod \(p\). So
+We used several time that whenever \(i\neq 0\), we have \(k\mapsto ki\) is a bijetion of \(\mathbb{F}_p^\times\). We already knew \(\tau^2\) was going to be a rational, so its great to see it is actually just \(\pm p\). Ofcourse when \(p=3\), this is the case we already worked out. Also recall that \(\tau\) is fixed by \(\sigma_q\) only when \(q\) is a quadratic residue mod \(p\). So
 \[\sigma_q(\tau) = \sum_{i=1}^{p-1}\left(\dfrac{i}{p}\right) \zeta_p^{qi} = \left(\dfrac{q}{p}\right) \tau.\]
 Unfortunately there is no nice way to finish this off in \(\mathbb{C}\), so we move down to finite fields as we did for \(p=3\).
 </p>
