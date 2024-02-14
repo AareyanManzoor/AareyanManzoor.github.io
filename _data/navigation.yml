@@ -5,7 +5,5 @@ main:
           url: research.html
         - title: Blog
           url: blog.html
-        - title: Sources
-          url: sources.html
         - title: TeXromancers
           url: Texromancers.html
